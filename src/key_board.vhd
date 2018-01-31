@@ -1,20 +1,13 @@
-										  library IEEE;
+library IEEE;
 
 use IEEE.STD_LOGIC_1164.ALL;
 
-use IEEE.STD_LOGIC_ARITH.ALL;
-
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
+													 
+use IEEE.std_logic_1164.all;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;   
+use ieee.numeric_std.all;	 
 
- 
-
-LIBRARY IEEE;
-
-USE IEEE.STD_LOGIC_1164.ALL;
-
-USE IEEE.STD_LOGIC_ARITH.ALL;
-
-USE IEEE.STD_LOGIC_UNSIGNED.ALL;
 
  
 
@@ -26,7 +19,9 @@ clock: in std_logic;
 
 col_line : in   std_logic_vector(3 downto 0);
 
-row_line : out std_logic_vector(3 downto 0);
+row_line : in std_logic_vector(3 downto 0);
+
+keyboard : in std_logic;
 
 data :out string (1 to 1)
 
@@ -37,124 +32,68 @@ end matrix_keypad;
  
 
 architecture Behavioral of matrix_keypad is
+      signal rowselected :std_logic_vector(0 to 4):="00000";
+      signal selected : std_logic_vector(0 to 3):="0000";
+      signal nothing_selected : std_logic := '0';
+      type dataArray is array (0 to 15)of string(1 to 1);  
+      signal keyboard1 : dataArray:=("7","8","9","+",
+                                    "4","5","6","-",
+                                    "1","2","3","*",
+                                    "r","0","=","/");  
 
+      signal keyboard2 : dataArray:=("0","1","2","3",
+                                    "4","5","6","7",
+                                    "8","9","+","-",
+                                    "*","/","=","r");
 begin
 
 test: process(clock,row_line,col_line) is
-
+      variable selrow: std_logic_vector(0 to 1):= "00";
+      variable selcol: std_logic_vector(0 to 1):= "00";
 begin
 
+nothing_selected <= '0' ;   
 
+case row_line is
 
-led <= "1111111111111111";
-
-elsif rising_edge(clock) then
-
-temp <= temp + 1;
-
-case temp(10 downto 8) is
-
-when "000" =>
-
-      row_line <= "0111"; --first row
-
-when "001" =>  
-
-      if col_line = "0111" then
-
-            led <= "0011001100110011"; -- 3
-
-      elsif col_line = "1011" then
-
-            led <= "0010001000100010"; -- 2
-
-      elsif col_line = "1101" then
-
-            led <= "0001000100010001"; -- 1
-
-      elsif col_line = "1110" then
-
-            led <= "0000000000000000"; -- 0
-
-      end if;
-
-when "010" =>
-
-      row_line <= "1011"; --second row
-
-when "011" =>
-
-      if col_line = "1110" then
-
-            led <= "0100010001000100"; -- 4
-
-      elsif col_line = "1101" then
-
-            led <= "0101010101010101"; -- 5
-
-      elsif col_line = "1011" then
-
-            led <= "0110011001100110"; -- 6
-
-      elsif col_line = "0111" then
-
-            led <= "0111011101110111"; -- 7
-
-      end if;
-
-when "100" =>
-
-      row_line <= "1101"; --third row
-
-when "101" =>
-
-      if col_line = "1110" then
-
-            led <= "1000100010001000"; -- 8
-
-      elsif col_line = "1101" then
-
-            led <= "1001100110011001"; -- 9
-
-      elsif col_line = "1011" then
-
-            led <= "1010101010101010"; -- a
-
-      elsif col_line = "0111" then
-
-            led <= "1011101110111011"; -- b
-
-      end if;
-
-when "110" =>
-
-      row_line <= "1110"; --fourth row
-
-when "111" =>
-
-      if col_line = "1110" then
-
-            led <= "1100110011001100"; -- C
-
-      elsif col_line = "1101" then
-
-            led <= "1101110111011101"; -- d
-
-      elsif col_line = "1011" then
-
-            led <= "1110111011101110"; -- e
-
-      elsif col_line = "0111" then
-
-            led <= "1111111111111111"; -- f
-
-      end if;
-
-when others => led <= "0000000000000000";
+      when "1110" =>
+            selrow := "00";
+      when "1101" =>
+            selrow := "01";
+      when "1011" =>
+            selrow := "10";
+      when "0111" =>
+            selrow := "11";
+      when others => nothing_selected <= '1' ;
 
 end case;
 
 
+case col_line is
+      when "1110" =>
+            selcol := "00";
+            nothing_selected <= '0' ;
+      when "1101" =>
+            selcol := "01";
+            nothing_selected <= '0' ;
+      when "1011" =>
+            selcol := "10";
+            nothing_selected <= '0' ;
+      when "0111" =>
+            selcol := "11";
+            nothing_selected <= '0' ;
+      when others => nothing_selected <= '1' ;
+
+
+end case;
+
+if (nothing_selected = '0')then
+      if(keyboard = '0')then
+            data<=keyboard1(to_integer(unsigned(selrow & selcol)));
+      else 
+            data<=keyboard2(to_integer(unsigned(selrow & selcol)));
+      end if;
+end if;
 
 end process;
 
