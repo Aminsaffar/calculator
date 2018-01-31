@@ -1,0 +1,96 @@
+[Project]
+Current Flow=Generic
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=calculator
+
+[Library]
+calculator=.\calculator\calculator.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+REFRESH_FLOW=1
+FLOWTOOLS=NONE
+FAMILY=Lattice ECP2
+fileopenfolder=E:\Elevator-Similator-master
+IMPL_TOOL=
+SYNTH_TOOL=
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+calculator=.
+Active_lib=
+
+[SpecTracer]
+WindowVisible=0
+
+[HierarchyViewer]
+HierarchyInformation=tbb|tbbbb|0
+ShowHide=ShowTopLevel
+Selected=
+
+[Folders]
+Name3=Makefiles
+Directory3=D:\My_Designs\cal\calculator\
+Extension3=mak
+Name4=Memory
+Directory4=D:\My_Designs\cal\calculator\
+Extension4=mem;mif;hex
+Name5=Dll Libraries
+Directory5=D:\My_Designs\cal\calculator\
+Extension5=dll
+Name6=PDF
+Directory6=D:\My_Designs\cal\calculator\
+Extension6=pdf
+Name7=HTML
+Directory7=D:\My_Designs\cal\calculator\
+Extension7=
+
+[Files]
+/adder.vhd=-1
+/divider.vhd=-1
+/subtractor.vhd=-1
+/multiplier.vhd=-1
+/mode.vhd=-1
+/power.vhd=-1
+/factorial.vhd=-1
+/regFile.vhd=-1
+/instructionTranslator.vhd=-1
+/dataPath.vhd=-1
+/fsm.vhd=-1
+/tb.vhd=-1
+/tbb.vhd=-1
+
+[Files.Data]
+.\src\adder.vhd=VHDL Source Code
+.\src\divider.vhd=VHDL Source Code
+.\src\subtractor.vhd=VHDL Source Code
+.\src\multiplier.vhd=VHDL Source Code
+.\src\mode.vhd=VHDL Source Code
+.\src\power.vhd=VHDL Source Code
+.\src\factorial.vhd=VHDL Source Code
+.\src\regFile.vhd=VHDL Source Code
+.\src\instructionTranslator.vhd=VHDL Source Code
+.\src\dataPath.vhd=VHDL Source Code
+.\src\fsm.vhd=VHDL Source Code
+.\src\tb.vhd=VHDL Source Code
+.\src\tbb.vhd=VHDL Source Code
+

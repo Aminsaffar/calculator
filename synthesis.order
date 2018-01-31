@@ -1,0 +1,13 @@
+i<>.\src\adder.vhd
+i<>.\src\divider.vhd
+i<>.\src\subtractor.vhd
+i<>.\src\multiplier.vhd
+i<>.\src\mode.vhd
+i<>.\src\power.vhd
+i<>.\src\factorial.vhd
+i<>.\src\regFile.vhd
+i<>.\src\instructionTranslator.vhd
+i<>.\src\dataPath.vhd
+i<>.\src\fsm.vhd
+i<>.\src\tb.vhd
+i<>.\src\tbb.vhd
