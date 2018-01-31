@@ -1,0 +1,5 @@
+WARNING DAGGEN_0523: "The source is compiled without the -dbg switch. Line breakpoints, code coverage, and assertion debug will not be available." 
+MESSAGE "File: e:\My_Designs\calculator2\calculator2\src\datapath.vhd" 
+MESSAGE "Compile Entity "dataPath"" 
+MESSAGE "Compile Architecture "dataPath" of Entity "dataPath"" 
+SUCCESS "Compile success 0 Errors 0 Warnings  Analysis time :  63.0 [ms]" 

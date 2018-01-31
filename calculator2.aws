@@ -1,0 +1,8 @@
+[Version]
+Version=9.2
+[Designs]
+calculator2=calculator2.adf
+[Settings]
+Active=calculator2
+[Expand]
+calculator2=1

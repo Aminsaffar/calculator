@@ -1,0 +1,43 @@
+Active-HDL 9.2.2499.sp1.36.4586  2018-01-31 20:27:28
+
+Elaboration top modules:
+Architecture                  tb(tb)
+
+
+------------------------------------------------------------------------------------------------------------------
+Entity                | Architecture | Library     | Info | Compiler Version                | Compilation Options
+------------------------------------------------------------------------------------------------------------------
+tb                    | tb           | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+dataPath              | datapath     | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+instructionTranslator | translator   | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+fsm                   | fsm          | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+adder                 | adder        | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+subtractor            | subtractor   | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+multiplier            | behavioral   | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+mux8to1               | rtl          | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+FullAdder             | fulladder    | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+halfAdder             | halfadder    | calculator2 |      | 9.2.2499.sp1.36.4586  (Windows) | -O3
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------
+VHDL Package                         | Library     | Info | Compiler Version                | Compilation Options
+------------------------------------------------------------------------------------------------------------------
+standard                             | std         |      |                                 | <unavailable>
+TEXTIO                               | std         |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+std_logic_1164                       | ieee        |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+NUMERIC_STD                          | ieee        |      | 9.2.2499.sp1.36.4586  (Windows) |  -2008
+std_logic_arith                      | ieee        |      | 9.2.2499.sp1.36.4586  (Windows) | 
+STD_LOGIC_UNSIGNED                   | ieee        |      | 9.2.2499.sp1.36.4586  (Windows) | 
+------------------------------------------------------------------------------------------------------------------
+
+------------------------------------------------------------------------------------------------------------------
+Library                              | Comment
+------------------------------------------------------------------------------------------------------------------
+calculator2                          | None
+ieee                                 | Standard IEEE packages library
+std                                  | Standard VHDL library
+------------------------------------------------------------------------------------------------------------------
+
+
+Simulation Options: asim -O5 +access +r +m+tb tb tb
+

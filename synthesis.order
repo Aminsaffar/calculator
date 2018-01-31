@@ -1,0 +1,16 @@
+i<>.\src\adder.vhd
+i<>.\src\instructiontranslator.vhd
+i<>.\src\factorial.vhd
+i<>.\src\divider.vhd
+i<>.\src\tb.vhd
+i<>.\src\regfile.vhd
+i<>.\src\subtractor.vhd
+i<>.\src\mode.vhd
+i<>.\src\fulladder.vhd
+i<>.\src\power.vhd
+i<>.\src\multiplier.vhd
+i<>.\src\fsm.vhd
+i<>.\src\halfadder.vhd
+i<>.\src\datapath.vhd
+i<>.\src\mux8to1 .vhd
+i<>.\src\delay.vhd

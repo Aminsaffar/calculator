@@ -1,0 +1,91 @@
+[Project]
+Current Flow=Multivendor
+VCS=0
+version=3
+Current Config=compile
+
+[Configurations]
+compile=calculator2
+
+[Library]
+calculator2=.\calculator2\calculator2.lib
+
+[Settings]
+AccessRead=0
+AccessReadWrite=0
+AccessACCB=0
+AccessACCR=0
+AccessReadWriteSLP=0
+AccessReadTopLevel=1
+DisableC=1
+ENABLE_ADV_DATAFLOW=0
+SYNTH_TOOL=<none>
+IMPL_TOOL=<none>
+CSYNTH_TOOL=<none>
+PHYSSYNTH_TOOL=<none>
+FLOW_TYPE=HDL
+LANGUAGE=VHDL
+FLOWTOOLS=ONLY_IMPL
+ON_SERVERFARM_SYNTH=0
+ON_SERVERFARM_IMPL=0
+ON_SERVERFARM_SIM=0
+DVM_DISPLAY=NO
+REFRESH_FLOW=1
+FAMILY=<none>
+HESPrepare=0
+
+[LocalVerilogSets]
+EnableSLP=1
+EnableDebug=0
+
+[LocalVhdlSets]
+CompileWithDebug=0
+
+[$LibMap$]
+calculator2=.
+Active_lib=
+
+[IMPLEMENTATION]
+UCF=
+
+[HierarchyViewer]
+HierarchyInformation=tb|tb|0  
+ShowHide=ShowTopLevel
+Selected=
+
+[Files]
+/mode.vhd=-1
+/power.vhd=-1
+/regfile.vhd=-1
+/multiplier.vhd=-1
+/divider.vhd=-1
+/factorial.vhd=-1
+/mux8to1.vhd=-1
+/fsm.vhd=-1
+/halfadder.vhd=-1
+/instructiontranslator.vhd=-1
+/delay.vhd=-1
+/fulladder.vhd=-1
+/subtractor.vhd=-1
+/adder.vhd=-1
+/datapath.vhd=-1
+/tb.vhd=-1
+
+[Files.Data]
+.\src\mode.vhd=VHDL Source Code
+.\src\power.vhd=VHDL Source Code
+.\src\regfile.vhd=VHDL Source Code
+.\src\multiplier.vhd=VHDL Source Code
+.\src\divider.vhd=VHDL Source Code
+.\src\factorial.vhd=VHDL Source Code
+.\src\mux8to1.vhd=VHDL Source Code
+.\src\fsm.vhd=VHDL Source Code
+.\src\halfadder.vhd=VHDL Source Code
+.\src\instructiontranslator.vhd=VHDL Source Code
+.\src\delay.vhd=VHDL Source Code
+.\src\fulladder.vhd=VHDL Source Code
+.\src\subtractor.vhd=VHDL Source Code
+.\src\adder.vhd=VHDL Source Code
+.\src\datapath.vhd=VHDL Source Code
+.\src\tb.vhd=VHDL Source Code
+

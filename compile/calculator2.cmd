@@ -1,0 +1,1 @@
+-w -s "e:\My_Designs\calculator\calculator\library.cfg"  -j "e:\My_Designs\calculator2\calculator2\projlib.cfg"  -d "e:\My_Designs\calculator2\calculator2\compile"   -work calculator2  -O3 -e 100 -2002 "e:\My_Designs\calculator2\calculator2\src\datapath.vhd"

@@ -1,0 +1,21 @@
+[Files List]
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\std\src\standard.vhd=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\std\src\textio.vhd=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\std_logic_1164.vhdl=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\std_logic_1164-body.vhdl=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\numeric_std.vhdl=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\numeric_std-body.vhdl=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\arith_p.vhd=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\arith_b.vhd=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\unsigned_p.vhd=S
+C:\Program Files\Aldec\Active-HDL 9.2\vlib\ieee\src\unsigned_b.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\halfadder.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\fulladder.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\mux8to1.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\multiplier.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\subtractor.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\adder.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\fsm.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\instructiontranslator.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\datapath.vhd=S
+C:\Users\Amin\Desktop\calculator2\src\tb.vhd=S
